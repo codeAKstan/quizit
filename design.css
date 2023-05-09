@@ -1,0 +1,240 @@
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-decoration:none;
+    }
+    .sidebar{
+    position:fixed;
+    width:230px;
+    height:100%;
+    left:-230px;
+    background:#F9F9F9;
+    transition:all .6s ease;
+    z-index: 11;
+    }
+    .sidebar header{
+    text-align:center;
+    font-size:22px;
+    line-height:70px;
+    color:#0C2A44;
+    text-transform:uppercase;
+    user-select:none;
+    }
+    .sidebar ul a{
+    font-size:20px;
+    padding-left:40px;
+    line-height:70px;
+    color:#0C2A44;
+    border-top:0.5px solid #F9F9F9;
+    border-bottom:0.5px solid #F9F9F9;
+    box-sizing:border-box;
+    height:100%;
+    width:100%;
+    display:block;
+    transition:0.4s;
+    }
+    ul li:hover a{
+    padding-left:50px;
+    color: #AECAE9;
+    }
+    .sidebar ul a i{
+    margin-right:16px;
+    }
+    #check{
+    display:none;
+    }
+    .span{
+        display: none;
+    }
+    label #btn, label #cancel{
+    position:absolute;
+    border-radius:3px;
+    background:none;
+    cursor:pointer;
+    }
+    label #btn{
+    color:#0C2A44;
+    padding:10px;
+    left:10px;
+    top:15px;
+    transition: .6s;
+    }
+    label #cancel{
+    z-index:1111;
+    padding:5px;
+    top:20px;
+    left:-195px;
+    color:#0C2A44;
+    transition:all .6s ease;
+    font-size: 20px;
+    }
+    #check:checked~.sidebar{
+    left:0;
+    }
+    #check:checked~label #btn{
+    opacity:0;
+    left:250px;
+    pointer-events:none;
+    }
+    #check:checked~label #cancel{
+    left:195px;
+    position: fixed;
+    }
+    .btn{
+        background-color: #0C2A44;
+        outline: none;
+        border: 0;
+        border-radius: 5px;
+        width: 90%;
+        padding: 10px;
+        color: #EEEEEE;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* sidebar ended */
+    /* sidebar size for bigger screens*/
+@media only screen and (min-width: 760px) {
+    
+        .sidebar{
+            z-index: 11;
+            position: fixed;
+            left: 0;
+            width: 250px;
+        }
+        label #cancel{
+            display: none;
+        }
+        .span{
+            display: inline-block;
+            font-size: 35px;
+            margin-left: 10px;
+        }
+        body{
+            background-color: #EEEEEE;
+        }
+        .header{
+            background-color: #EEEEEE;
+        }
+        
+}
+
+    body{
+                    background-color: #EEEEEE;
+                    color: #0C2A44;
+    }
+    .header{
+                    background: #EEEEEE;
+                    height: 70px;
+    }
+    @media only screen and (max-width: 760px){
+        .header{
+            background: #F9F9F9;
+        }
+    }
+    .header h3{
+                    color: #0C2A44;
+                    padding-top:23px;
+                    padding-left:50px;
+                    font-family: "Times new roman";
+    }
+    
+    h2.title{
+        font-weight: bolder;
+        color: #0C2A44;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+   
+    p button.btn{
+        color: #EEEEEE;
+        width: 150px;
+        border-radius: 0%;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    p button.btn:hover{
+        color: #AECAE9;
+        background-color: #0C2A44;
+
+    }
+    /* what you will learn*/
+    .wrapper{
+        margin: 10px auto;
+        padding: 20px;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+        text-align: center;
+  
+     }
+     .container{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(270px,1fr)); 
+     }
+     .box{
+        
+        padding: 20px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+        background-color: #F9F9F9;
+        text-align: center;
+     }
+     .box img{
+        height: 70px;
+     }
+     .box h3{
+        color: #0C2A44;
+        padding: 10px 0;
+        font-size: 20px;
+
+     }
+     .box:hover{
+        transform: scale(1.03);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .3);
+     }
+     @media only screen and (min-width: 760px) {
+        .wrapper{
+           padding: 0 10%;
+           padding-left: 350px;
+
+        }
+        
+     }
+/* what do you want to learn ends here*/
+/* why learn with us starts here*/
+.section-wrapper{
+    margin: 10px auto;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+
+ }
+ .section-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+ }
+ .section-box{
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+        background-color: #EEEEEE;
+        text-align: justify;
+        border: #000 solid 1px;
+        height: 100px;
+        
+ }
+ .section-box ul li{
+    list-style-type: square;
+    list-style-position: inside;
+    
+ }
+ @media only screen and (min-width: 760px) {
+    /*bigger screens*/
+    .section-container{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+     }
+    
+ }

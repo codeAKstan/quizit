@@ -1,0 +1,42 @@
+// Create the email message
+$to = $email;
+$message = "<html>
+<head>
+<style>
+    .container {
+        background-image: url('img/bb.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+    }
+    button{
+      background-color: blue;
+      border: none;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      
+    }
+    a{
+      text-decoration: none;
+      columns: black;
+    }
+</style>
+</head>
+<body>
+    <div class='container'>
+        <h2 style="color: blue;">Password Reset Request</h2>
+        <p>Dear ".$email ."we have recieved a password reset request from you.\.</p>
+        <p>To reset your password, please click the button or copy the link:</p>
+        <p><a href='https://quizyit.com.ng/password-reset-code.php?token=$token'>
+          https://quizyit.com.ng/password-reset-code.php?token=$token
+        </a></p>
+        <center><button>
+          <a href='https://quizyit.com.ng/password-reset-code.php?token=$token'>Reset Password</a></button>
+        </center>
+    </div>
+</body>
+</html>";
