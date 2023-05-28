@@ -11,25 +11,29 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
-    <link rel="shortcut icon" href="img/ideas.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/ideas.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<script src="https://kit.fontawesome.com/c1fbfe0463.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
     <style>
         body{
-            background-image: linear-gradient(to bottom right, #353274, #54346B);
+            /* background-image: linear-gradient(to bottom right, #C3E1EC, #F4FAFC); */
+            background-color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        section{
+            background-color: rgba(173, 211, 232, 0.2)
         }
         .user{
             padding: 20px;
-            color: #898A9B;
+            color: #000;
             text-transform: capitalize;
             font-size: 15px;
         }
          img{
             font-size: 50px;
-            border: 3px solid white;
-            border-radius: 50%;
+            border: 2px solid black;
             size: 30px;
         }
         ul{
@@ -39,12 +43,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
             
         }
         ul li{
-            background-color: rgba(45, 51, 97, 0.2);
-            display:  inline-block;
-            margin: 6px;
+            /* background-color: rgba(173, 211, 232, 0.2); */
+            display:  block;
+            margin: 8px;
             padding: 20px;
             border-radius: 5px;
-            color: #898A9B;
+            color: #000;
 
         }
         .second ul{
@@ -55,6 +59,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
         .second ul li{
             display: block;
             padding: 20px;
+            background-color: rgba(173, 211, 232, 0.2)
             
         }
         .second ul li a{
@@ -76,7 +81,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
         /* for desktop view */
         @media screen and (min-width: 768px) {
             ul li{
-            background-color: rgba(45, 51, 97, 0.2);
+            /* background-color: rgba(173, 211, 232, 0.2); */
             display:  inline-flexbox;
             width: 500px;
             margin: 6px;
@@ -89,29 +94,33 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
         .second ul li{
             display: block;
             padding: 20px;
-            width: 1300px;
+            width: 1270px;
             
         }
         }
     </style>
 </head>
 <body>
+    <section>
     <div class="user">
         <img src="../img/programmer.png" alt="" onload="goodDay()"><br><br>
         <h3 id="greet" style="display:inline;"></h3> 
         <h3 style="display:inline;"><?=$_SESSION['fname']?></h3>
     </div>
-    <p><a href="../home.php"><i class="fas fa-home" style="color:#3C91E6;margin-left:20px;"></i></a></p>
+    <!-- <p><a href="../home.php"><i class="fas fa-home" style="color:#3C91E6;margin-left:20px;"></i></a></p> -->
     <div>
         <ul>
-            <li><b><center style="font-size:30px;"><?php echo ($points);?></center><br><i class="fas fa-coins" style="color:#FFD700;"> Points available</i> </b></li>
-            <li><b><center style="font-size:30px;"><?=$_SESSION['withdraw']?></center> <br> <i class='fa fa-money' style="color:green;"> Points withdrawn</i></b></li>
+            <li><i class="fas fa-coins" style="color:#FFD700;"> </i> Points available<b>
+                <center style="font-size:30px;"><?php echo ($points);?></center>
+                <br><span style="color:#4387CC;text-align:center;">
+                 <a href=""><i class="fa fa-exchange" style="color:#4387CC;text-align:center;">Redeem</i></a></span>
+        </b></li>
         </ul>
     </div>
+    </section>
     <div class="second">
         <ul>
-            <li><a href=""><span class="iconify" data-icon="bx:money-withdraw" style="color:green;"> </span> Withdraw</a></li>
-            <li><a href=""><i class='bx bxs-bank' > <span style='color:#898A9B'>Bank Account</span></i></a></li>
+            <li><a href="bank-acct.php"><i class='bx bxs-bank' > <span style='color:#898A9B'>Bank Account</span></i></a></li>
             <li><a href=""><i class="bx bxs-cog"> <span style='color:#898A9B'>Settings </span></i></a></li>
             <li><a href="../logout.php"><i class="bx bxs-log-out-circle" style="color:#990000;"> Logout</i> </a></li>
         </ul>

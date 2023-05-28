@@ -30,12 +30,11 @@ if(isset($_POST['uname']) &&
 
           $username =  $user['username'];
           $password =  $user['password'];
-          $fname =  $user['fname'];
           $id =  $user['id'];
           if($username === $uname){
              if($pass=== $password){
                  $_SESSION['id'] = $id;
-                 $_SESSION['fname'] = $fname;
+                 $_SESSION['username'] = $username;
 
                  header("Location: ../admin.php");
                  exit;
