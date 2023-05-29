@@ -15,13 +15,18 @@
             background-color: black;
             color: white;
             padding: 20px 20px 5px 5px;
+            position: fixed;
+            bottom:0;
+            width:100%;
+            height: 150px;
         }
         footer ul{
             list-style-type: none;
         }
         footer p{
-            text-align: center;
+            text-align: right;
             color: #898A9B;
+            font-family: 'Courier New', Courier, monospace;
         }
         footer #ig{
             background-image: linear-gradient(to bottom right, #feda75, #fa7e1e, #d62976, #4f5bd5);
@@ -44,11 +49,12 @@
             color: white;
         }
         .btn{
-            padding: 10px;
+            padding: 6px;
             color: #4f5bd5;
             background-color: #898A9B;
             border: none;
             cursor: pointer;
+            
         }
     </style>
 </head>
@@ -62,9 +68,11 @@
         </ul>
         <form action="">
             <h4>CONTACT US</h4>
-            <input type="email" name="email" id="email" placeholder="Enter your email..."><button class="btn"><i class="fas fa-arrow-right"></i></button>
+            <input type="email" name="email" id="email" placeholder="Enter your email...">
+            <a href="mailto:quizit@quizyit.com.ng"> <i class="fas fa-arrow-right btn"></i></a>
+        
+        <p>Copyright&copy; 2023 quizyit</p>
         </form>
-        <p>Copyright&copy; 2023 quizyit. All rights reserved</p>
     </footer>
 </body>
 </html>
