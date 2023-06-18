@@ -62,7 +62,7 @@
     <footer>
         <ul>
             <li><a href="#"><i class="fab fa-facebook"></i></a></li><br>
-            <li><a href="#"><i class="fab fa-twitter" style="color:rgb(125, 167, 245);"></i></a></li><br>
+            <li><a href="https://twitter.com/quizit765825"><i class="fab fa-twitter" style="color:rgb(125, 167, 245);"></i></a></li><br>
             <li><a href="#"><i class="fab fa-instagram" id="ig"></i></a></li><br>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
         </ul>

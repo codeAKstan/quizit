@@ -43,18 +43,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 				</a>
 			</li>
 			<li>
-				<a href="H/leaderboard.php">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Leaderboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="H/messages.php">
-					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
-				</a>
-			</li>
-			<li>
 				<a href="H/ide.php">
 					<i class='bx bxs-truck' ></i>
 					<span class="text">Code Environment</span>
@@ -120,11 +108,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 					<h1>Dashboard</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Dashboard</a>
+							<a href="home.php">Dashboard</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="#">Home</a>
+							<a class="active" href="home.php">Home</a>
 						</li>
 					</ul>
 					<h3 style="color:#3C91E6">Hello, <?=$_SESSION['fname']?></h3>
@@ -140,17 +128,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 						<p>My Courses</p>
 					</span>
 				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-						<h3>0</h3>
-						<p>Followers</p>
-					</span>
-				</li>
+				
 				<li>
 					<i class='bx bxs-dollar-circle' ></i>
 					<span class="text">
-						<h3><?=$_SESSION['points']?>pt</h3>
+						<h3><?=$_SESSION['points']?>qp</h3>
 						<p>Income</p>
 					</span>
 				</li>
@@ -173,9 +155,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
+						<tr>
 								<td>
-									
+								<?=$_SESSION['fname']?>
+								</td>
+								<td><?= date('m.d.y')?></td>
+								<td style="color:green;">Active</td>
 							</tr>
 							<tr>
 								<td>
@@ -196,9 +181,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 				</div>
 				
 		</main>
-		<!-- MAIN -->
+		
 	</section>
-	<!-- CONTENT -->
+	
 	
 
 	<script src="script.js"></script>

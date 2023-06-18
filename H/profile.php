@@ -111,7 +111,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
     <div>
         <ul>
             <li><i class="fas fa-coins" style="color:#FFD700;"> </i> Points available<b>
-                <center style="font-size:30px;"><?php echo ($points);?></center>
+                <center style="font-size:30px;"><?php echo ($points);?>qp</center>
                 <br><span style="color:#4387CC;text-align:center;">
                  <a href=""><i class="fa fa-exchange" style="color:#4387CC;text-align:center;">Redeem</i></a></span>
         </b></li>
