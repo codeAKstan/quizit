@@ -43,7 +43,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 				</a>
 			</li>
 			<li>
-				<a href="H/ide.php">
+				<a href="H/ide/ui/ide.html">
 					<i class='bx bxs-truck' ></i>
 					<span class="text">Code Environment</span>
 				</a>

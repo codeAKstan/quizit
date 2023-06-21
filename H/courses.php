@@ -45,7 +45,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 					</a>
 				</li>
 				<li>
-					<a href="ide.php">
+					<a href="ide/ui/ide.html">
 						<i class='bx bxs-truck'></i>
 						<span class="text">Code Environment</span>
 					</a>
@@ -66,7 +66,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 					</a>
 				</li>
 				<li>
-					<a href="H/faqs.php">
+					<a href="faqs.php">
 						<i class='bx bxs-help-circle'></i>
 						<span class="text">Faqs</span>
 					</a>

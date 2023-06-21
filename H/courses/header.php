@@ -16,14 +16,20 @@
         top: 0;
         width: 100%;
         left: 0;
+        text-decoration: none;
         color: white;
         padding: 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    .container h4 a{
+        color:white;
+        text-decoration: none;
+        list-style: none;
+    }
 </style>
 <body>
     <div class="container">
-        <h4> <i class='bx bxs-bulb'></i>Quizit
+        <h4> <a href="../../home.php"><i class='bx bxs-bulb'></i>Quizit</a>
 
         </h4>
     </div>

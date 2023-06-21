@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['points'])) {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,9 +50,9 @@
 <body>
     <div class="container">
         <h3>HTML</h3>
-        <p>Hyper Text <span>Markup</span> language</p>
+        <p>Hyper Text <span><b>Markup</b></span> language</p>
         
-        <center><button>Learn</button> <br><br>
+        <center><button>Learn HTML</button> <br><br>
         <button>Take Quiz</button></center>
         
     </div>
@@ -57,3 +62,7 @@
     
 </body>
 </html>
+<?php }else {
+	header("Location: login.php");
+	exit;
+} ?>
