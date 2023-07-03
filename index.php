@@ -33,8 +33,7 @@
         <header> <img src="img/ideas.png" class="logo" alt="logo"><span class="span">Quizit</span></header>
           <ul>
             
-            <li><a href="developer.php"><i class="fas fa-less-than"></i>Developer
-                <i class="fas fa-greater-than"></i></a></li>
+            <li><a href="contact_us.php"><i class="fas fa-address-book"></i>Contact us</a></li>
             <li><a href="about_us.php"><i class="fas fa-info-circle"></i>About us</a></li>
             <li><a href="login.php"><i class="fas fa-sign-in"></i>Login</a></li>
             <li><a href="create.php"><i class="fas fa-user-plus"></i>Register</a></li>

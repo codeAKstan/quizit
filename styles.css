@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
   width: 360px;
@@ -9,6 +8,7 @@
   position: relative;
   z-index: 1;
   background: #FFFFFF;
+  font-family: cursive;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -91,7 +91,7 @@
 body {
   background-color: #eee;
   
-  font-family: "Roboto", sans-serif;
+  font-family: cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
 }

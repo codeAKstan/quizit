@@ -19,7 +19,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
     <style>
         body{
             /* background-image: linear-gradient(to bottom right, #C3E1EC, #F4FAFC); */
-            background-color: #fff;
+            background-color: rgba(173, 211, 232, 0.2);
             font-family: 'Courier New', Courier, monospace;
         }
         section{

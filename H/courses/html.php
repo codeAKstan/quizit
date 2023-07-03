@@ -19,6 +19,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
     body{
         background-color: #3C91E6;
         font-family: monospace;
+        text-decoration: none;
+        list-style: none;
     }
     div h3{
         color: black;
@@ -46,15 +48,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
     span{
         color:red;
     }
+    a{
+        text-decoration: none;
+        color:white;
+    }
 </style>
 <body>
     <div class="container">
         <h3>HTML</h3>
         <p>Hyper Text <span><b>Markup</b></span> language</p>
         
-        <center><button>Learn HTML</button> <br><br>
+        <center><button><a href="learn/html/html_accessibility.html">Learn HTML</a></button> <br><br>
         <button>Take Quiz</button></center>
         
+
     </div>
     <?php include(
         'header.php'
