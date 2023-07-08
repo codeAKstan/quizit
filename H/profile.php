@@ -59,7 +59,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['last
         .second ul li{
             display: block;
             padding: 20px;
-            background-color: rgba(173, 211, 232, 0.2)
+            background-color: rgba(173, 211, 232, 0.2);
             
         }
         .second ul li a{

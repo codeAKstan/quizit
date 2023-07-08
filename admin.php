@@ -8,6 +8,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 	<script src="https://kit.fontawesome.com/c1fbfe0463.js" crossorigin="anonymous"></script>
     <title>Admin dashboard</title>
 </head>
+<style>
+        body{
+            background-color: rgba(173, 211, 232, 0.2);
+            color: #3C91E6;
+        }
+        table th{
+            color: #3C91E6;
+        }
+    </style>
 <body>
     
 </body>
@@ -30,11 +40,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
       <thead>
         <tr>
           <th scope="col">s/n</th>
-          <th scope="col">First</th>
+          <th scope="col">Fullname</th>
           <th scope="col">username</th>
-          <th scope="col">password</th>
+          <!-- <th scope="col">password</th> -->
           <th scope="col">email</th>
           <th scope="col">Mobile</th>
+          <th scope="col">Points</th>
           <th scope="col">operation</th>
         </tr>
       </thead>
@@ -47,17 +58,19 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                 $id = $row['id'];
                 $fname = $row['fname'];
                 $uname = $row['username'];
-                $pass = $row['password'];
+                // $pass = $row['password'];
                 $email = $row['email'];
                 $number = $row['number'];
+                $points = $row['points'];
                 ?>
                 <tr>
                     <th scope="row"><?php echo $id; ?></th>
                     <td><?php echo $fname; ?></td>
                     <td><?php echo $uname; ?></td>
-                    <td><?php echo $pass; ?></td>
+                    <!-- <td><?php echo $pass; ?></td> -->
                     <td><?php echo $email; ?></td>
                     <td><?php echo $number; ?></td>
+                    <td><?php echo $points; ?></td>
                     <td>
                         <button class="btn btn-primary">
                             <a href="withdraw-point.php?id=<?php echo $id; ?>" class="btn btn-primary btn-sm">Approve withdraw</a></button>

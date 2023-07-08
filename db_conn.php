@@ -3,7 +3,7 @@
 $sName = "localhost";
 $uName = "root";
 $pass = "";
-$db_name = "quizits";
+$db_name = "quizit";
 
 try {
     $conn = new PDO("mysql:host=$sName;dbname=$db_name", 

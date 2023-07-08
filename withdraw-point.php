@@ -62,5 +62,5 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     } else {
         // No user ID provided, redirect to the user listing page or show an error message
         header("Location: user_list.php");
-    }
+    }}
     ?>
