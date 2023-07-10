@@ -40,12 +40,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
       <thead>
         <tr>
           <th scope="col">s/n</th>
-          <th scope="col">Fullname</th>
+          <!-- <th scope="col">Fullname</th> -->
           <th scope="col">username</th>
           <!-- <th scope="col">password</th> -->
           <th scope="col">email</th>
           <th scope="col">Mobile</th>
           <th scope="col">Points</th>
+          <th scope="col">Bank</th>
+          <th scope="col">AcctNo</th>
+          <th scope="col">AcctName</th>
           <th scope="col">operation</th>
         </tr>
       </thead>
@@ -56,21 +59,27 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
         if ($result->execute()) {
             while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                 $id = $row['id'];
-                $fname = $row['fname'];
+                // $fname = $row['fname'];
                 $uname = $row['username'];
                 // $pass = $row['password'];
                 $email = $row['email'];
                 $number = $row['number'];
                 $points = $row['points'];
+                $bankName = $row['bank_name'];
+                $accountNumber = $row['account_number'];
+                $accountName = $row['account_name'];
                 ?>
                 <tr>
                     <th scope="row"><?php echo $id; ?></th>
-                    <td><?php echo $fname; ?></td>
+                    <!-- <td><?php echo $fname; ?></td> -->
                     <td><?php echo $uname; ?></td>
                     <!-- <td><?php echo $pass; ?></td> -->
                     <td><?php echo $email; ?></td>
                     <td><?php echo $number; ?></td>
                     <td><?php echo $points; ?></td>
+                    <td><?php echo $bankName; ?></td>
+                    <td><?php echo $accountNumber; ?></td>
+                    <td><?php echo $accountName; ?></td>
                     <td>
                         <button class="btn btn-primary">
                             <a href="withdraw-point.php?id=<?php echo $id; ?>" class="btn btn-primary btn-sm">Approve withdraw</a></button>
