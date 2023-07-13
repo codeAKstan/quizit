@@ -58,8 +58,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         <h3>HTML</h3>
         <p>Hyper Text <span><b>Markup</b></span> language</p>
         
-        <center><button><a href="learn/html/html_accessibility.html">Learn HTML</a></button> <br><br>
-        <button>Take Quiz</button></center>
+        <center><button><a href="">Learn HTML</a></button> <br><br>
+        <button><a href="quiz/main.php">Take Quiz</a></button></center>
         
 
     </div>
@@ -70,6 +70,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 </body>
 </html>
 <?php }else {
-	header("Location: login.php");
+	header("Location: ../../login.php");
 	exit;
 } ?>

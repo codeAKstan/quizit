@@ -24,10 +24,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         exit;
     }
     else{
-        echo "<form action='process_redeem.php' method='POST'>";
+        echo "<form action='process_redeem.php' method='POST' class='mb-3'>";
         echo "Enter the number of points to redeem: <br>";
-        echo "<input type='number' name='redeem_points' required> ";
-        echo "<input type='submit' class='btn btn-primary' value='Redeem'>";
+        echo "<input type='number' col='3' name='redeem_points' required class='form-control'><br> ";
+        echo "<center><input type='submit' class='btn btn-primary' value='Redeem'></center>";
         echo "</form>";
 
     }

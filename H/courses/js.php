@@ -46,6 +46,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
     span{
         color:red;
     }
+    a{
+        text-decoration: none;
+        color:white;
+    }
 </style>
 <body>
     <div class="container">
@@ -53,7 +57,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         
         
         <center><button>Learn JS</button> <br><br>
-        <button>Take Quiz</button></center>
+        <button><a href="quiz/main.php">Take Quiz</a></button></center>
         
     </div>
     <?php include(
@@ -63,6 +67,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 </body>
 </html>
 <?php }else {
-	header("Location: login.php");
+	header("Location: ../../login.php");
 	exit;
 } ?>

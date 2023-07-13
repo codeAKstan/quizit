@@ -20,7 +20,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) &&isset($_SESSION['last_
     $points = $row['points'];
 
     // Check if a day has passed since the user last logged in
-    $last_login = $_SESSION['last_login']; // Assuming you store the last login date in the session
+    $last_login = $_SESSION['last_login']; 
     $current_date = date('Y-m-d');
     if ($current_date > $last_login) {
         // Update the user's point value

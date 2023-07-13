@@ -47,6 +47,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         color:orange;
         
     }
+    a{
+        text-decoration: none;
+        color:white;
+    }
 </style>
 <body>
     <div class="container">
@@ -54,7 +58,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         <p>Cascading  <span><b>Style</b></span> Sheets</p>
         
         <center><button>Learn CSS</button> <br><br>
-        <button>Take Quiz</button></center>
+        <button><a href="quiz/main.php">Take Quiz</a></button></center>
         
     </div>
     <?php include(
@@ -64,6 +68,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 </body>
 </html>
 <?php }else {
-	header("Location: login.php");
+	header("Location: ../../login.php");
 	exit;
 } ?>

@@ -33,6 +33,7 @@ if(isset($_POST['uname']) &&
           $fname =  $user['fname'];
           $id =  $user['id'];
           $points = $user['points'];
+          $redeemedPoints = $user['redeemed_points'];
           $last_login = $user['last_login'];
           $withdraw = $user['withdraw'];
           if($username === $uname){
@@ -40,6 +41,7 @@ if(isset($_POST['uname']) &&
                  $_SESSION['id'] = $id;
                  $_SESSION['fname'] = $fname;
                  $_SESSION['points'] = $points;
+                 $_SESSION['redeemed_points'] = $redeemedPoints;
                  $_SESSION['last_login'] = $last_login;
                  $_SESSION['withdraw'] = $withdraw;
 

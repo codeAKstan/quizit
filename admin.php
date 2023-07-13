@@ -46,6 +46,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
           <th scope="col">email</th>
           <th scope="col">Mobile</th>
           <th scope="col">Points</th>
+          <th scope="col">Redeemed</th>
           <th scope="col">Bank</th>
           <th scope="col">AcctNo</th>
           <th scope="col">AcctName</th>
@@ -65,6 +66,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                 $email = $row['email'];
                 $number = $row['number'];
                 $points = $row['points'];
+                $redeemedPoints = $row['redeemed_points'];
                 $bankName = $row['bank_name'];
                 $accountNumber = $row['account_number'];
                 $accountName = $row['account_name'];
@@ -77,6 +79,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                     <td><?php echo $email; ?></td>
                     <td><?php echo $number; ?></td>
                     <td><?php echo $points; ?></td>
+                    <td><?php echo $redeemedPoints; ?></td>
                     <td><?php echo $bankName; ?></td>
                     <td><?php echo $accountNumber; ?></td>
                     <td><?php echo $accountName; ?></td>

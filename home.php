@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['points'])) {
+if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['points']) && isset($_SESSION['redeemed_points']))  {
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -121,13 +121,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 			</div>
 
 			<ul class="box-info">
-				<li>
-					<i class='bx bxs-book-content' ></i>
-					<span class="text">
-						<h3>0</h3>
-						<p>My Courses</p>
-					</span>
-				</li>
 				
 				<li>
 					<i class='bx bxs-dollar-circle' ></i>
@@ -136,6 +129,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
 						<p>Income</p>
 					</span>
 				</li>
+				<li>
+				<i class=" fa fa-exchange" style="background-color:#EF3B3A;padding:25px;border-radius:3px;color:white;"></i>
+					<span class="text">
+						<h3><?=$_SESSION['redeemed_points']?>qp</h3>
+						<p>Redeemed</p>
+					</span>
+				</li>
+				
 			</ul>
 
 
