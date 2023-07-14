@@ -50,6 +50,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
           <th scope="col">Bank</th>
           <th scope="col">AcctNo</th>
           <th scope="col">AcctName</th>
+          <th scope="col">Coin</th>
+          <th scope="col">Network</th>
+          <th scope="col">Address</th>
           <th scope="col">operation</th>
         </tr>
       </thead>
@@ -70,6 +73,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                 $bankName = $row['bank_name'];
                 $accountNumber = $row['account_number'];
                 $accountName = $row['account_name'];
+                $coin = $row['coin'];
+                $net = $row['network'];
+                $address = $row['address'];
                 ?>
                 <tr>
                     <th scope="row"><?php echo $id; ?></th>
@@ -83,9 +89,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                     <td><?php echo $bankName; ?></td>
                     <td><?php echo $accountNumber; ?></td>
                     <td><?php echo $accountName; ?></td>
+                    <td><?php echo $coin; ?></td>
+                    <td><?php echo $net; ?></td>
+                    <td><?php echo $address; ?></td>
                     <td>
                         <button class="btn btn-primary">
-                            <a href="withdraw-point.php?id=<?php echo $id; ?>" class="btn btn-primary btn-sm">Approve withdraw</a></button>
+                            <a href="withdraw-point.php?id=<?php echo $id; ?>" class="btn btn-primary btn-sm">Approve</a></button>
                         <button class="btn btn-danger">
                             <a href="delete_user.php?id=<?php echo $id; ?>" class="btn btn-danger btn-sm">Delete</a></button>
                     </td>

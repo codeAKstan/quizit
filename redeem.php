@@ -16,7 +16,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
     $currentPoints = $user['points'];
     
 
-    $requiredPoints = 150;
+    $requiredPoints = 20000;
     if ($currentPoints < $requiredPoints) {
         $fname = $_SESSION['fname'];
         

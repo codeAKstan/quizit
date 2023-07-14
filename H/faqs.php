@@ -61,7 +61,7 @@
             </tr>
             <tr>
                 <td>Can I withdraw my qp?</td>
-                <td>Yes you can withdraw them. The minimum withdraw is 1500qp. 1000 = 500 NGN</td>
+                <td>Yes you can withdraw them. 2000qp = $1. The minimum withdraw is 10$.</td>
             </tr>
         </tbody>
     </table>

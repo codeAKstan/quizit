@@ -38,14 +38,14 @@
             <li><a href="login.php"><i class="fas fa-sign-in"></i>Login</a></li>
             <li><a href="create.php"><i class="fas fa-user-plus"></i>Register</a></li>
         </ul>
-        <footer>
+        <!-- <footer>
         <ul>
             <li><a href="#"><i class="fab fa-facebook" style="color:blue;"></i></a></li>
             <li><a href="https://twitter.com/quizit765825"><i class="fab fa-twitter" style="color:rgb(125, 167, 245);"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram" id="ig"></i></a></li>
         </ul>
         <p>Copyright&copy; 2023 quizyit. All rights reserved</p>
-        </footer>
+        </footer> -->
     </div>
 <div class="header"><h3>Quizit</h3></div>
   <!--what you will learn-->

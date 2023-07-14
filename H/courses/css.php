@@ -57,7 +57,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         <h3>CSS</h3>
         <p>Cascading  <span><b>Style</b></span> Sheets</p>
         
-        <center><button>Learn CSS</button> <br><br>
+        <center><button><a href="learn/html-css.php">Learn CSS</a></button> <br><br>
         <button><a href="quiz/main.php">Take Quiz</a></button></center>
         
     </div>

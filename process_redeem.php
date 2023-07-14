@@ -18,7 +18,7 @@ try {
     $currentPoints = $user['points'];
     $redeemedPoints = $user['redeemed_points'];
 
-    $requiredPoints = 150;
+    $requiredPoints = 20000;
     if ($currentPoints < $requiredPoints) {
         echo "<p style='background-color: #ffcccc; color: #ff0000;'>You don't have enough points to redeem.</p>";
         exit;

@@ -127,7 +127,7 @@ a{
          <span style="color:#4387CC;text-align:center;">
                  <a href="../redeem.php"><i class="fa fa-exchange" style="color:#fff;text-align:center;">Redeem</i></a></span>
          </span> </div> <div class=" d-flex mt-2"> 
-           <button class="btn1 btn-dark"><a href="bank-acct.php"><i class="fas fa-bank"></i> Bank Account</a></button> </div> 
+           <button class="btn1 btn-dark"><a href="withdraw_method.php"><i class="fas fa-money-bill-alt" style="color:#00ff00";></i> Withdraw method</a></button> </div> 
          <div class="text mt-3"> 
           <div class=" d-flex mt-2"> 
             <button class="btn1 btn-dark"><a href=""><i class="bx bxs-cog"></i> Settings</a></button> </div> 

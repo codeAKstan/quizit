@@ -56,7 +56,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname']) && isset($_SESSION['poin
         <h3>JAVASCRIPT</h3>
         
         
-        <center><button>Learn JS</button> <br><br>
+        <center><button><a href="learn/javascript.php">Learn JS</a></button> <br><br>
         <button><a href="quiz/main.php">Take Quiz</a></button></center>
         
     </div>
